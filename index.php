@@ -18,7 +18,12 @@
 		  	
 		  	<?php
 				$count = 0;
-				echo $x;
+				
+				function inc(){
+					global $count;
+					echo $count;
+				}
+				inc();
 			?>
 </body>
 </html>
